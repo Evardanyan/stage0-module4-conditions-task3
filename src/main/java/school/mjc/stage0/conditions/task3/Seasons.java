@@ -2,7 +2,7 @@ package school.mjc.stage0.conditions.task3;
 
 public class Seasons {
     public void tellTheSeasonByMonthNumber(int month) {
-        if (month > 12 && month <= 0) {
+        if (month > 12 || month <= 0) {
             System.out.println("wrong number!");
         } else if (month == 12 || (month >= 1 &&  month < 3)) {
             System.out.println("Winter");
@@ -13,6 +13,5 @@ public class Seasons {
         } else if (month >= 9 && month < 12) {
             System.out.println("Autumn");
         }
-
     }
 }
